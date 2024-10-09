@@ -6,14 +6,14 @@
     "description": "Product Description",
     "image": "bamboo-watch.jpg",
     "category": "Accessories",
-    "price": 65,
+    "price": 66,
     "quantity": 2,
     "internalReference": "REF-123-456",
     "shellId": 15,
     "inventoryStatus": "INSTOCK",
     "rating": 5,
     "createdAt": 1718114215761,
-    "updatedAt": 1728424524474
+    "updatedAt": 1728469624925
   },
   {
     "id": 1002,
@@ -368,22 +368,6 @@
     "updatedAt": 1718114215761
   },
   {
-    "id": 1025,
-    "code": "nbm5mv45n",
-    "name": "Sneakers",
-    "description": "Product Description",
-    "image": "sneakers.jpg",
-    "category": "Clothing",
-    "price": 78,
-    "quantity": 0,
-    "internalReference": "REF-123-456",
-    "shellId": 15,
-    "inventoryStatus": "INSTOCK",
-    "rating": 4,
-    "createdAt": 1718114215761,
-    "updatedAt": 1718114215761
-  },
-  {
     "id": 1026,
     "code": "zx23zc42c",
     "name": "Teal T-Shirt",
@@ -494,5 +478,21 @@
     "rating": 0,
     "createdAt": 1728425483612,
     "updatedAt": 1728425483612
+  },
+  {
+    "id": 1033,
+    "code": "f230fh0g3",
+    "name": "Bamboo Watch 4",
+    "description": "Product Description",
+    "image": "bamboo-watch.jpg",
+    "category": "Accessories",
+    "price": 70,
+    "quantity": 2,
+    "internalReference": "REF-123-456",
+    "shellId": 89,
+    "inventoryStatus": "INSTOCK",
+    "rating": 0,
+    "createdAt": 1728469682948,
+    "updatedAt": 1728469682948
   }
 ]

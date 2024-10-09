@@ -7,13 +7,13 @@
     "image": "bamboo-watch.jpg",
     "category": "Accessories",
     "price": 65,
-    "quantity": 0,
+    "quantity": 2,
     "internalReference": "REF-123-456",
     "shellId": 15,
     "inventoryStatus": "INSTOCK",
     "rating": 5,
     "createdAt": 1718114215761,
-    "updatedAt": 1718114215761
+    "updatedAt": 1728424524474
   },
   {
     "id": 1002,
@@ -188,22 +188,6 @@
     "shellId": 15,
     "inventoryStatus": "INSTOCK",
     "rating": 5,
-    "createdAt": 1718114215761,
-    "updatedAt": 1718114215761
-  },
-  {
-    "id": 1013,
-    "code": "fldsmn31b",
-    "name": "Grey T-Shirt",
-    "description": "Product Description",
-    "image": "grey-t-shirt.jpg",
-    "category": "Clothing",
-    "price": 48,
-    "quantity": 0,
-    "internalReference": "REF-123-456",
-    "shellId": 15,
-    "inventoryStatus": "OUTOFSTOCK",
-    "rating": 3,
     "createdAt": 1718114215761,
     "updatedAt": 1718114215761
   },
@@ -384,22 +368,6 @@
     "updatedAt": 1718114215761
   },
   {
-    "id": 1025,
-    "code": "nbm5mv45n",
-    "name": "Sneakers",
-    "description": "Product Description",
-    "image": "sneakers.jpg",
-    "category": "Clothing",
-    "price": 78,
-    "quantity": 0,
-    "internalReference": "REF-123-456",
-    "shellId": 15,
-    "inventoryStatus": "INSTOCK",
-    "rating": 4,
-    "createdAt": 1718114215761,
-    "updatedAt": 1718114215761
-  },
-  {
     "id": 1026,
     "code": "zx23zc42c",
     "name": "Teal T-Shirt",
@@ -462,5 +430,53 @@
     "rating": 8,
     "createdAt": 1718114215761,
     "updatedAt": 1718114215761
+  },
+  {
+    "id": 1030,
+    "code": "f230fh0g3",
+    "name": "Bamboo Watch 2",
+    "description": "Product Description",
+    "image": "bamboo-watch.jpg",
+    "category": "Accessories",
+    "price": 65,
+    "quantity": 2,
+    "internalReference": "REF-123-456",
+    "shellId": 89,
+    "inventoryStatus": "INSTOCK",
+    "rating": 5,
+    "createdAt": 1728424777072,
+    "updatedAt": 1728424777072
+  },
+  {
+    "id": 1031,
+    "code": "f230fh0g3",
+    "name": "Bamboo Watch 3",
+    "description": "Product Description",
+    "image": "bamboo-watch.jpg",
+    "category": "Accessories",
+    "price": 65,
+    "quantity": 2,
+    "internalReference": "REF-123-456",
+    "shellId": 89,
+    "inventoryStatus": "INSTOCK",
+    "rating": 5,
+    "createdAt": 1728425453057,
+    "updatedAt": 1728425453057
+  },
+  {
+    "id": 1032,
+    "code": "f230fh0g3",
+    "name": "Bamboo Watch 3",
+    "description": "Product Description",
+    "image": "bamboo-watch.jpg",
+    "category": "Accessories",
+    "price": 65,
+    "quantity": 2,
+    "internalReference": "REF-123-456",
+    "shellId": 89,
+    "inventoryStatus": "INSTOCK",
+    "rating": 0,
+    "createdAt": 1728425483612,
+    "updatedAt": 1728425483612
   }
 ]

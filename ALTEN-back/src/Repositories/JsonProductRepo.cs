@@ -1,11 +1,12 @@
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 
 public interface IProductRepository
 {
     IEnumerable<Product> GetAllProducts();
     Product? GetProductById(int id);
-    void AddProduct(Product product);
-    void UpdateProduct(Product product);
+    void AddProduct(ProductDto product);
+    void UpdateProduct(int id, ProductDto product);
     void DeleteProduct(int id);
     void SaveChanges();  // Persist changes to the JSON file
 }
@@ -32,42 +33,61 @@ public class JsonProductRepository: IProductRepository
   public IEnumerable<Product> GetAllProducts() => _products;
 
   public Product? GetProductById(int id) => _products.FirstOrDefault(p => p.id == id);
+  
+  public void AddProduct(ProductDto createProduct){
 
-  public void AddProduct(Product product){
+    //Utiliser AutoMapper serait mieux
+    var product = new Product
+    {
+        code = createProduct.code,
+        name = createProduct.name,
+        description = createProduct.description,
+        image = createProduct.image,
+        category = createProduct.category,
+        price = createProduct.price,
+        quantity = createProduct.quantity,
+        internalReference = createProduct.internalReference,
+        shellId = createProduct.shellId,
+        inventoryStatus = createProduct.inventoryStatus,
+        rating = createProduct.rating
+    };
+
     product.id = _products.Any() ? _products.Max(p => p.id) + 1 : 1;
     product.createdAt = DateTime.UtcNow;
     product.updatedAt = DateTime.UtcNow;
+    
     _products.Add(product);
     SaveChanges();
   }
 
-  public void UpdateProduct(Product product) {
-    var existing = GetProductById(product.id);
-    if (existing is null) return;
+  public void UpdateProduct(int id, ProductDto updateProduct) {
 
-    existing.code = product.code;
-    existing.name = product.name;
-    existing.description = product.description;
-    existing.image = product.image;
-    existing.category = product.category;
-    existing.price = product.price;
-    existing.quantity = product.quantity;
-    existing.internalReference = product.internalReference;
-    existing.shellId = product.shellId;
-    existing.inventoryStatus = product.inventoryStatus;
-    existing.rating = product.rating;
-    existing.updatedAt = DateTime.UtcNow;
+    var existingProduct = GetProductById(id);
+    if (existingProduct is null) return;
+
+    //Utiliser AutoMapper serait mieux
+    existingProduct.code = updateProduct.code;
+    existingProduct.name = updateProduct.name;
+    existingProduct.description = updateProduct.description;
+    existingProduct.image = updateProduct.image;
+    existingProduct.category = updateProduct.category;
+    existingProduct.price = updateProduct.price;
+    existingProduct.quantity = updateProduct.quantity;
+    existingProduct.internalReference = updateProduct.internalReference;
+    existingProduct.shellId = updateProduct.shellId;
+    existingProduct.inventoryStatus = updateProduct.inventoryStatus;
+    existingProduct.rating = updateProduct.rating;
+
+    existingProduct.updatedAt = DateTime.UtcNow;
 
     SaveChanges();
   }
 
   public void DeleteProduct(int id) {
     var product = GetProductById(id);
-    if (product is not null)
-    {
-      _products.Remove(product);
-      SaveChanges();
-    }
+    if (product is null) return;
+    _products.Remove(product);
+    SaveChanges();
   }
 
   public void SaveChanges() {

@@ -29,7 +29,7 @@ public class Product {
     public int quantity { get; set; }
     public string internalReference { get; set; } = string.Empty;
     public int shellId { get; set; }
-    public string inventoryStatus { get; set; } = "INSTOCK";  // INSTOCK, LOWSTOCK, OUTOFSTOCK
+    public string inventoryStatus { get; set; } = string.Empty;
     public int rating { get; set; }
 
     [JsonConverter(typeof(UnixDateTimeConverter))]

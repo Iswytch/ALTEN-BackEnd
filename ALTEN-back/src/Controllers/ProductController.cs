@@ -27,21 +27,20 @@ public class ProductController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult AddProduct([FromBody] Product product)
+    public IActionResult AddProduct([FromBody] ProductDto product)
     {
         _service.AddProduct(product);
-        return CreatedAtAction(nameof(GetProductById), new { product.id }, product);
+        return Created($"/Product", product);
     }
 
     [HttpPatch("{id}")]
-    public IActionResult UpdateProduct(int id, [FromBody] Product product)
+    public IActionResult UpdateProduct(int id, [FromBody] ProductDto product)
     {
         var existing = _service.GetProductById(id);
         if (existing is null) return NotFound();
         
-        product.id = id;
-        _service.UpdateProduct(product);
-        return NoContent();
+        _service.UpdateProduct(id, product);
+        return Ok(product);
     }
 
     [HttpDelete("{id}")]
@@ -51,6 +50,6 @@ public class ProductController : ControllerBase
         if (existing is null) return NotFound();
 
         _service.DeleteProduct(id);
-        return NoContent();
+        return Ok();
     }
 }

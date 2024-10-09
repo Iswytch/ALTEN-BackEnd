@@ -2,8 +2,8 @@ public interface IProductService
 {
     IEnumerable<Product> GetAllProducts();
     Product? GetProductById(int id);
-    void AddProduct(Product product);
-    void UpdateProduct(Product product);
+    void AddProduct(ProductDto product);
+    void UpdateProduct(int id, ProductDto product);
     void DeleteProduct(int id);
 }
 
@@ -20,9 +20,9 @@ public class ProductService : IProductService
 
     public Product? GetProductById(int id) => _repository.GetProductById(id);
 
-    public void AddProduct(Product product) => _repository.AddProduct(product);
+    public void AddProduct(ProductDto product) => _repository.AddProduct(product);
 
-    public void UpdateProduct(Product product) => _repository.UpdateProduct(product);
+    public void UpdateProduct(int id, ProductDto product) => _repository.UpdateProduct(id, product);
 
     public void DeleteProduct(int id) => _repository.DeleteProduct(id);
 }
