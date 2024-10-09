@@ -33,3 +33,6 @@ C:\Users\danna\Documents\Recherche_taff_2024\ALTEN\DEV\product-trial-master\prod
 C:\Users\danna\Documents\Recherche_taff_2024\ALTEN\DEV\product-trial-master\product-trial-master\back\ALTEN-back\obj\Debug\net8.0\ref\ALTEN-back.dll
 C:\Users\danna\Documents\Recherche_taff_2024\ALTEN\DEV\product-trial-master\product-trial-master\back\ALTEN-back\bin\Debug\net8.0\data\products.json
 C:\Users\danna\Documents\Recherche_taff_2024\ALTEN\DEV\product-trial-master\product-trial-master\back\ALTEN-back\obj\Debug\net8.0\ALTEN-back.sourcelink.json
+C:\Users\danna\Documents\Recherche_taff_2024\ALTEN\DEV\product-trial-master\product-trial-master\back\ALTEN-back\bin\Debug\net8.0\ALTEN.postman_collection.json
+C:\Users\danna\Documents\Recherche_taff_2024\ALTEN\DEV\product-trial-master\product-trial-master\back\ALTEN-back\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\danna\Documents\Recherche_taff_2024\ALTEN\DEV\product-trial-master\product-trial-master\back\ALTEN-back\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

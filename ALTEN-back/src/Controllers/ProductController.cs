@@ -27,20 +27,20 @@ public class ProductController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult AddProduct([FromBody] ProductDto product)
+    public IActionResult AddProduct([FromBody] CreateProductDto product)
     {
         _service.AddProduct(product);
         return Created($"/Product", product);
     }
 
     [HttpPatch("{id}")]
-    public IActionResult UpdateProduct(int id, [FromBody] ProductDto product)
+    public IActionResult UpdateProduct(int id, [FromBody] UpdateProductDto product)
     {
         var existing = _service.GetProductById(id);
         if (existing is null) return NotFound();
         
         _service.UpdateProduct(id, product);
-        return Ok(product);
+        return Ok();
     }
 
     [HttpDelete("{id}")]

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ALTEN-back")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff66901a9ffa6a7e18849caa5954f58b0c31356b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9f68bbab73c2dd78f6bfcd192da0136a1a04fb2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ALTEN-back")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ALTEN-back")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,8 @@
+using AutoMapper;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 // Add services to the container
 builder.Services.AddControllers();
@@ -9,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IProductRepository, JsonProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
+builder.Services.AddAutoMapper(typeof(ProductProfile));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -18,8 +24,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
+//app.UseHttpsRedirection();
+//app.UseAuthorization();
 
 app.MapControllers();
 
