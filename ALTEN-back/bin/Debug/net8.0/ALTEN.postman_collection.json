@@ -52,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"code\": \"f230fh0g3\",\r\n    \"name\": \"Bamboo Watch\",\r\n    \"description\": \"Product Description\",\r\n    \"image\": \"bamboo-watch.jpg\",\r\n    \"category\": \"Accessories\",\r\n    \"price\": 67,\r\n    \"quantity\": 2,\r\n    \"internalReference\": \"REF-123-456\",\r\n    \"shellId\": 15,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 5\r\n}",
+					"raw": "{\r\n    \"name\": \"Diamond Gold Gold Phone Case\",\r\n    \"price\": 1800\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -60,7 +60,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5042/Product/1000",
+					"raw": "http://localhost:5042/Product/1010",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -68,7 +68,7 @@
 					"port": "5042",
 					"path": [
 						"Product",
-						"1000"
+						"1010"
 					]
 				}
 			},
@@ -101,7 +101,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "  {\r\n    \"code\": \"f230fh0g3\",\r\n    \"name\": \"Bamboo Watch 4\",\r\n    \"description\": \"Product Description\",\r\n    \"image\": \"bamboo-watch.jpg\",\r\n    \"category\": \"Accessories\",\r\n    \"price\": 70,\r\n    \"quantity\": 2,\r\n    \"internalReference\": \"REF-123-456\",\r\n    \"shellId\": 89,\r\n    \"inventoryStatus\": \"INSTOCK\"\r\n  }",
+					"raw": "{\r\n    \"name\": \"Bamboo Watch 9\",\r\n    \"description\": \"Product Description\",\r\n    \"image\": \"bamboo-watch.jpg\",\r\n    \"category\": \"Accessories\",\r\n    \"price\": 70,\r\n    \"quantity\": 2,\r\n    \"internalReference\": \"REF-123-456\",\r\n    \"shellId\": 89,\r\n    \"rating\": 3\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

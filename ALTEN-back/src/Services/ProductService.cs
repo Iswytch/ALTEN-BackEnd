@@ -10,9 +10,9 @@ public interface IProductService
 
 public class ProductService : IProductService
 {
-    private readonly IProductRepository _repository;
+    private readonly IProductRepositoryDb _repository;
 
-    public ProductService(IProductRepository repository)
+    public ProductService(IProductRepositoryDb repository)
     {
         _repository = repository;
     }

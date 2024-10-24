@@ -146,18 +146,18 @@
   {
     "id": 1010,
     "code": "plb34234v",
-    "name": "Diamond Gold Phone Case",
+    "name": "Diamond Gold Gold Phone Case",
     "description": "Product Description",
     "image": "gold-phone-case.jpg",
     "category": "Accessories",
-    "price": 180,
+    "price": 1800,
     "quantity": 0,
     "internalReference": "REF-123-456",
     "shellId": 15,
     "inventoryStatus": "OUTOFSTOCK",
     "rating": 4,
     "createdAt": 1718114215761,
-    "updatedAt": 1728477774779
+    "updatedAt": 1728479884915
   },
   {
     "id": 1011,
@@ -188,22 +188,6 @@
     "shellId": 15,
     "inventoryStatus": "INSTOCK",
     "rating": 5,
-    "createdAt": 1718114215761,
-    "updatedAt": 1718114215761
-  },
-  {
-    "id": 1016,
-    "code": "k8l6j58jl",
-    "name": "Lime Band",
-    "description": "Product Description",
-    "image": "lime-band.jpg",
-    "category": "Fitness",
-    "price": 79,
-    "quantity": 0,
-    "internalReference": "REF-123-456",
-    "shellId": 15,
-    "inventoryStatus": "INSTOCK",
-    "rating": 3,
     "createdAt": 1718114215761,
     "updatedAt": 1718114215761
   },
