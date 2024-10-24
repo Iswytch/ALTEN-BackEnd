@@ -22,7 +22,7 @@ public class ProductController : ControllerBase
     public IActionResult GetProductById(int id)
     {
         var product = _service.GetProductById(id);
-        if (product is null) return NotFound();
+        if (product is null) return NotFound($"A product with ID {id} was not found.");
         return Ok(product);
     }
 
