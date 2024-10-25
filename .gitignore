@@ -1,0 +1,70 @@
+# Dossiers du système
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+.vscode/
+.idea/
+
+# Fichiers de configuration
+*.config
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Dossier des paquets NuGet
+packages/
+.nuget/
+
+# Fichiers de publication
+publish/
+wwwroot/
+node_modules/
+
+# Fichiers temporaires et de logs
+*.log
+*.nlog
+*.log.*
+logs/
+*.DS_Store
+*.pyc
+.vscode/
+
+# Fichiers générés
+*.dll
+*.exe
+*.pdb
+*.cache
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Configurations locales
+appsettings.Development.json
+appsettings.Local.json
+
+# Secrets de développement
+secrets.json
+
+# Fichiers de base de données locale
+*.mdf
+*.ldf
+
+# Certificats HTTPS
+*.pfx
+*.p12
+
+# Fichiers générés pour Docker
+Dockerfile
+docker-compose*
+.dockerignore
+
+# Dossiers spécifiques à Visual Studio
+.vs/
+*.psess
+*.pidb
+TestResults/

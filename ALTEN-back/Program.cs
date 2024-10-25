@@ -2,6 +2,17 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200") // Origine Angular
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 // Ajouter le service DbContext avec la chaîne de connexion à MariaDB
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -26,6 +37,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors("AllowAngularApp");
 }
 
 //app.UseHttpsRedirection();
